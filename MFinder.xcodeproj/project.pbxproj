@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4B1C80501EB8A69F726C52 /* Pods_MFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8D7A939AF3637AA85F5925 /* Pods_MFinderTests.framework */; };
+		4DABD1B81DBC6FD184F93650 /* Pods_MFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4B8884D0EE3785561D88EE /* Pods_MFinder.framework */; };
+		CBAED7392863F70B0056A679 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAED7382863F70B0056A679 /* Movie.swift */; };
+		CBAED73B286408880056A679 /* MovieListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAED73A286408880056A679 /* MovieListController.swift */; };
+		CBAED73E28640FC60056A679 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAED73D28640FC60056A679 /* MoviesListViewModel.swift */; };
+		CBAED74128641C000056A679 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAED74028641C000056A679 /* MoviesCollectionViewCell.swift */; };
+		CBB23E592862BF200006B39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E582862BF200006B39D /* AppDelegate.swift */; };
+		CBB23E5B2862BF200006B39D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E5A2862BF200006B39D /* SceneDelegate.swift */; };
+		CBB23E602862BF200006B39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB23E5E2862BF200006B39D /* Main.storyboard */; };
+		CBB23E622862BF210006B39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB23E612862BF210006B39D /* Assets.xcassets */; };
+		CBB23E652862BF210006B39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB23E632862BF210006B39D /* LaunchScreen.storyboard */; };
+		CBB23E702862BF210006B39D /* MFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E6F2862BF210006B39D /* MFinderTests.swift */; };
+		CBB23E7A2862BF210006B39D /* MFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E792862BF210006B39D /* MFinderUITests.swift */; };
+		CBB23E7C2862BF210006B39D /* MFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E7B2862BF210006B39D /* MFinderUITestsLaunchTests.swift */; };
+		CBB23E8C2862C1D60006B39D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E8B2862C1D60006B39D /* Network.swift */; };
+		CBB23E8E2862C31B0006B39D /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E8D2862C31B0006B39D /* ApiHandler.swift */; };
+		CBB23E902862C5720006B39D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E8F2862C5720006B39D /* ImageDownloader.swift */; };
+		CBB23E932862C84B0006B39D /* APIRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E922862C84B0006B39D /* APIRequestModel.swift */; };
+		CBB23E962862C8830006B39D /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E952862C8830006B39D /* MovieRequest.swift */; };
+		CBB23E982862C8950006B39D /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB23E972862C8950006B39D /* MovieResponse.swift */; };
+		DE5FE6A13B4CD43108BE1B3F /* Pods_MFinder_MFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C071F9CCC63F79A227A0BA6A /* Pods_MFinder_MFinderUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBB23E6C2862BF210006B39D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB23E4D2862BF200006B39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB23E542862BF200006B39D;
+			remoteInfo = MFinder;
+		};
+		CBB23E762862BF210006B39D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB23E4D2862BF200006B39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB23E542862BF200006B39D;
+			remoteInfo = MFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158FE48C1D525DE62C66A28E /* Pods-MFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFinder.release.xcconfig"; path = "Target Support Files/Pods-MFinder/Pods-MFinder.release.xcconfig"; sourceTree = "<group>"; };
+		398A27570B3812359A69B551 /* Pods-MFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFinder.debug.xcconfig"; path = "Target Support Files/Pods-MFinder/Pods-MFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		53F1792F24499DD401B39BE4 /* Pods-MFinder-MFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFinder-MFinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-MFinder-MFinderUITests/Pods-MFinder-MFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55C7641B748122F6521FD01C /* Pods-MFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-MFinderTests/Pods-MFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B8D7A939AF3637AA85F5925 /* Pods_MFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B96C155604DCB5C7969E5AC /* Pods-MFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFinderTests.release.xcconfig"; path = "Target Support Files/Pods-MFinderTests/Pods-MFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C17331AD75CEA3C6A365173 /* Pods-MFinder-MFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFinder-MFinderUITests.release.xcconfig"; path = "Target Support Files/Pods-MFinder-MFinderUITests/Pods-MFinder-MFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB4B8884D0EE3785561D88EE /* Pods_MFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C071F9CCC63F79A227A0BA6A /* Pods_MFinder_MFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFinder_MFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAED7382863F70B0056A679 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CBAED73A286408880056A679 /* MovieListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListController.swift; sourceTree = "<group>"; };
+		CBAED73D28640FC60056A679 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
+		CBAED74028641C000056A679 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB23E552862BF200006B39D /* MFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB23E582862BF200006B39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBB23E5A2862BF200006B39D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBB23E5F2862BF200006B39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBB23E612862BF210006B39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBB23E642862BF210006B39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBB23E662862BF210006B39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB23E6B2862BF210006B39D /* MFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB23E6F2862BF210006B39D /* MFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFinderTests.swift; sourceTree = "<group>"; };
+		CBB23E752862BF210006B39D /* MFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB23E792862BF210006B39D /* MFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFinderUITests.swift; sourceTree = "<group>"; };
+		CBB23E7B2862BF210006B39D /* MFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBB23E8B2862C1D60006B39D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CBB23E8D2862C31B0006B39D /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		CBB23E8F2862C5720006B39D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		CBB23E922862C84B0006B39D /* APIRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestModel.swift; sourceTree = "<group>"; };
+		CBB23E952862C8830006B39D /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
+		CBB23E972862C8950006B39D /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBB23E522862BF200006B39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DABD1B81DBC6FD184F93650 /* Pods_MFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB23E682862BF210006B39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4B1C80501EB8A69F726C52 /* Pods_MFinderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB23E722862BF210006B39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5FE6A13B4CD43108BE1B3F /* Pods_MFinder_MFinderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B39EF0E74B846D3A0B4CD3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B8884D0EE3785561D88EE /* Pods_MFinder.framework */,
+				C071F9CCC63F79A227A0BA6A /* Pods_MFinder_MFinderUITests.framework */,
+				6B8D7A939AF3637AA85F5925 /* Pods_MFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBAED73C28640FA80056A679 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBAED73D28640FC60056A679 /* MoviesListViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		CBAED73F28641BDB0056A679 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CBAED74028641C000056A679 /* MoviesCollectionViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CBB23E4C2862BF200006B39D = {
+			isa = PBXGroup;
+			children = (
+				CBB23E572862BF200006B39D /* MFinder */,
+				CBB23E6E2862BF210006B39D /* MFinderTests */,
+				CBB23E782862BF210006B39D /* MFinderUITests */,
+				CBB23E562862BF200006B39D /* Products */,
+				DBA453B81188C4FCEA590458 /* Pods */,
+				4B39EF0E74B846D3A0B4CD3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBB23E562862BF200006B39D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E552862BF200006B39D /* MFinder.app */,
+				CBB23E6B2862BF210006B39D /* MFinderTests.xctest */,
+				CBB23E752862BF210006B39D /* MFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBB23E572862BF200006B39D /* MFinder */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E582862BF200006B39D /* AppDelegate.swift */,
+				CBB23E5A2862BF200006B39D /* SceneDelegate.swift */,
+				CBB23E892862C19D0006B39D /* Controllers */,
+				CBAED73C28640FA80056A679 /* viewModels */,
+				CBAED73F28641BDB0056A679 /* views */,
+				CBB23E8A2862C1AD0006B39D /* Models */,
+				CBB23E882862C1910006B39D /* Network */,
+				CBB23E5E2862BF200006B39D /* Main.storyboard */,
+				CBB23E612862BF210006B39D /* Assets.xcassets */,
+				CBB23E632862BF210006B39D /* LaunchScreen.storyboard */,
+				CBB23E662862BF210006B39D /* Info.plist */,
+			);
+			path = MFinder;
+			sourceTree = "<group>";
+		};
+		CBB23E6E2862BF210006B39D /* MFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E6F2862BF210006B39D /* MFinderTests.swift */,
+			);
+			path = MFinderTests;
+			sourceTree = "<group>";
+		};
+		CBB23E782862BF210006B39D /* MFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E792862BF210006B39D /* MFinderUITests.swift */,
+				CBB23E7B2862BF210006B39D /* MFinderUITestsLaunchTests.swift */,
+			);
+			path = MFinderUITests;
+			sourceTree = "<group>";
+		};
+		CBB23E882862C1910006B39D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E8B2862C1D60006B39D /* Network.swift */,
+				CBB23E8D2862C31B0006B39D /* ApiHandler.swift */,
+				CBB23E8F2862C5720006B39D /* ImageDownloader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBB23E892862C19D0006B39D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBAED73A286408880056A679 /* MovieListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBB23E8A2862C1AD0006B39D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E912862C8330006B39D /* API */,
+				CBAED7382863F70B0056A679 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBB23E912862C8330006B39D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E922862C84B0006B39D /* APIRequestModel.swift */,
+				CBB23E942862C86D0006B39D /* Movies */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CBB23E942862C86D0006B39D /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				CBB23E952862C8830006B39D /* MovieRequest.swift */,
+				CBB23E972862C8950006B39D /* MovieResponse.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		DBA453B81188C4FCEA590458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				398A27570B3812359A69B551 /* Pods-MFinder.debug.xcconfig */,
+				158FE48C1D525DE62C66A28E /* Pods-MFinder.release.xcconfig */,
+				53F1792F24499DD401B39BE4 /* Pods-MFinder-MFinderUITests.debug.xcconfig */,
+				9C17331AD75CEA3C6A365173 /* Pods-MFinder-MFinderUITests.release.xcconfig */,
+				55C7641B748122F6521FD01C /* Pods-MFinderTests.debug.xcconfig */,
+				9B96C155604DCB5C7969E5AC /* Pods-MFinderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBB23E542862BF200006B39D /* MFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB23E7F2862BF210006B39D /* Build configuration list for PBXNativeTarget "MFinder" */;
+			buildPhases = (
+				38962F6186451998A65F81C2 /* [CP] Check Pods Manifest.lock */,
+				CBB23E512862BF200006B39D /* Sources */,
+				CBB23E522862BF200006B39D /* Frameworks */,
+				CBB23E532862BF200006B39D /* Resources */,
+				D4A672282562CA86C96F6D69 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFinder;
+			productName = MFinder;
+			productReference = CBB23E552862BF200006B39D /* MFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBB23E6A2862BF210006B39D /* MFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB23E822862BF210006B39D /* Build configuration list for PBXNativeTarget "MFinderTests" */;
+			buildPhases = (
+				D39D3774823A501E131D37B7 /* [CP] Check Pods Manifest.lock */,
+				CBB23E672862BF210006B39D /* Sources */,
+				CBB23E682862BF210006B39D /* Frameworks */,
+				CBB23E692862BF210006B39D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB23E6D2862BF210006B39D /* PBXTargetDependency */,
+			);
+			name = MFinderTests;
+			productName = MFinderTests;
+			productReference = CBB23E6B2862BF210006B39D /* MFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBB23E742862BF210006B39D /* MFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB23E852862BF210006B39D /* Build configuration list for PBXNativeTarget "MFinderUITests" */;
+			buildPhases = (
+				08769F96E39846E35229C54E /* [CP] Check Pods Manifest.lock */,
+				CBB23E712862BF210006B39D /* Sources */,
+				CBB23E722862BF210006B39D /* Frameworks */,
+				CBB23E732862BF210006B39D /* Resources */,
+				1843B5E9EB314B920EB7604B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB23E772862BF210006B39D /* PBXTargetDependency */,
+			);
+			name = MFinderUITests;
+			productName = MFinderUITests;
+			productReference = CBB23E752862BF210006B39D /* MFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBB23E4D2862BF200006B39D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CBB23E542862BF200006B39D = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					CBB23E6A2862BF210006B39D = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = CBB23E542862BF200006B39D;
+					};
+					CBB23E742862BF210006B39D = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = CBB23E542862BF200006B39D;
+					};
+				};
+			};
+			buildConfigurationList = CBB23E502862BF200006B39D /* Build configuration list for PBXProject "MFinder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBB23E4C2862BF200006B39D;
+			productRefGroup = CBB23E562862BF200006B39D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB23E542862BF200006B39D /* MFinder */,
+				CBB23E6A2862BF210006B39D /* MFinderTests */,
+				CBB23E742862BF210006B39D /* MFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBB23E532862BF200006B39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB23E652862BF210006B39D /* LaunchScreen.storyboard in Resources */,
+				CBB23E622862BF210006B39D /* Assets.xcassets in Resources */,
+				CBB23E602862BF200006B39D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB23E692862BF210006B39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB23E732862BF210006B39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08769F96E39846E35229C54E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MFinder-MFinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1843B5E9EB314B920EB7604B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFinder-MFinderUITests/Pods-MFinder-MFinderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFinder-MFinderUITests/Pods-MFinder-MFinderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MFinder-MFinderUITests/Pods-MFinder-MFinderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38962F6186451998A65F81C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D39D3774823A501E131D37B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A672282562CA86C96F6D69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFinder/Pods-MFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFinder/Pods-MFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MFinder/Pods-MFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBB23E512862BF200006B39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB23E932862C84B0006B39D /* APIRequestModel.swift in Sources */,
+				CBAED74128641C000056A679 /* MoviesCollectionViewCell.swift in Sources */,
+				CBB23E8E2862C31B0006B39D /* ApiHandler.swift in Sources */,
+				CBAED73E28640FC60056A679 /* MoviesListViewModel.swift in Sources */,
+				CBB23E592862BF200006B39D /* AppDelegate.swift in Sources */,
+				CBAED7392863F70B0056A679 /* Movie.swift in Sources */,
+				CBAED73B286408880056A679 /* MovieListController.swift in Sources */,
+				CBB23E8C2862C1D60006B39D /* Network.swift in Sources */,
+				CBB23E902862C5720006B39D /* ImageDownloader.swift in Sources */,
+				CBB23E982862C8950006B39D /* MovieResponse.swift in Sources */,
+				CBB23E962862C8830006B39D /* MovieRequest.swift in Sources */,
+				CBB23E5B2862BF200006B39D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB23E672862BF210006B39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB23E702862BF210006B39D /* MFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB23E712862BF210006B39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB23E7C2862BF210006B39D /* MFinderUITestsLaunchTests.swift in Sources */,
+				CBB23E7A2862BF210006B39D /* MFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBB23E6D2862BF210006B39D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB23E542862BF200006B39D /* MFinder */;
+			targetProxy = CBB23E6C2862BF210006B39D /* PBXContainerItemProxy */;
+		};
+		CBB23E772862BF210006B39D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB23E542862BF200006B39D /* MFinder */;
+			targetProxy = CBB23E762862BF210006B39D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBB23E5E2862BF200006B39D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB23E5F2862BF200006B39D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBB23E632862BF210006B39D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB23E642862BF210006B39D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBB23E7D2862BF210006B39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBB23E7E2862BF210006B39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB23E802862BF210006B39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 398A27570B3812359A69B551 /* Pods-MFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TH85H3M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabha.mfinder.MFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBB23E812862BF210006B39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158FE48C1D525DE62C66A28E /* Pods-MFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TH85H3M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabha.mfinder.MFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBB23E832862BF210006B39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C7641B748122F6521FD01C /* Pods-MFinderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TH85H3M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabha.mfinder.MFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MFinder.app/MFinder";
+			};
+			name = Debug;
+		};
+		CBB23E842862BF210006B39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B96C155604DCB5C7969E5AC /* Pods-MFinderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TH85H3M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabha.mfinder.MFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MFinder.app/MFinder";
+			};
+			name = Release;
+		};
+		CBB23E862862BF210006B39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F1792F24499DD401B39BE4 /* Pods-MFinder-MFinderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TH85H3M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabha.mfinder.MFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MFinder;
+			};
+			name = Debug;
+		};
+		CBB23E872862BF210006B39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C17331AD75CEA3C6A365173 /* Pods-MFinder-MFinderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TH85H3M58;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabha.mfinder.MFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBB23E502862BF200006B39D /* Build configuration list for PBXProject "MFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB23E7D2862BF210006B39D /* Debug */,
+				CBB23E7E2862BF210006B39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB23E7F2862BF210006B39D /* Build configuration list for PBXNativeTarget "MFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB23E802862BF210006B39D /* Debug */,
+				CBB23E812862BF210006B39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB23E822862BF210006B39D /* Build configuration list for PBXNativeTarget "MFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB23E832862BF210006B39D /* Debug */,
+				CBB23E842862BF210006B39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB23E852862BF210006B39D /* Build configuration list for PBXNativeTarget "MFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB23E862862BF210006B39D /* Debug */,
+				CBB23E872862BF210006B39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBB23E4D2862BF200006B39D /* Project object */;
+}

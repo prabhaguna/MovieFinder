@@ -1,0 +1,6 @@
+framework module Pods_MFinderTests {
+  umbrella header "Pods-MFinderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
